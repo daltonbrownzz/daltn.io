@@ -1,102 +1,64 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>daltn's Portfolio</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+  <header>
+    <h1>daltn</h1>
+  </header>
 
-body {
-  font-family: 'Outfit', sans-serif;
-  background: #FFFBEB;
-  color: #1c1c1c;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
+  <!-- About Me Section -->
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I’m daltn, a developer passionate about coding and creating. I’ve got 2 years of experience in Lua and HTML, 1 in Blender, and I’m still exploring JavaScript and Figma!
+    </p>
+  </section>
 
-header {
-  padding: 2rem;
-  text-align: center;
-  background: #fff2cc;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+  <!-- Skills Section -->
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Lua <span>2 Years</span></div>
+      <div class="skill">HTML <span>2 Years</span></div>
+      <div class="skill">Blender <span>1 Year</span></div>
+      <div class="skill">JavaScript <span>Learning</span></div>
+      <div class="skill">Figma <span>Learning</span></div>
+    </div>
+  </section>
 
-header h1 {
-  font-size: 2rem;
-  color: #000000;
-  animation: fadeInDown 1s ease forwards;
-}
+  <!-- Projects Section -->
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Thunderhead Game</h3>
+        <p>
+          A Roblox coaster game based on Dollywood’s Thunderhead. I scripted the ride logic and effects.
+        </p>
+      </div>
+      <div class="project">
+        <h3>CertiFy System</h3>
+        <p>
+          A custom certification system built with Luau for Roblox dev groups. Includes UI and full back-end.
+        </p>
+      </div>
+    </div>
+  </section>
 
-section {
-  padding: 4rem 2rem;
-  max-width: 1000px;
-  margin: auto;
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 1s ease forwards;
-  animation-delay: 0.3s;
-}
+  <!-- Footer -->
+  <footer>
+    <p>Made daltn | © 2025</p>
+  </footer>
 
-section:not(:first-of-type) {
-  animation-delay: 0.6s;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #00a59c;
-}
-
-.skills,
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5rem;
-}
-
-.skill,
-.project {
-  background: #ffffff;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill:hover,
-.project:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.skill span {
-  font-size: 0.9rem;
-  color: #777;
-  display: block;
-  margin-top: 0.3rem;
-}
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  color: #999;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+  <!-- JavaScript -->
+  <script src="src/script.js"></script>
+</body>
+</html>
